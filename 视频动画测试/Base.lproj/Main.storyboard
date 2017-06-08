@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7a-rD-pqf">
+                                <rect key="frame" x="0.0" y="617" width="187.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JPD-rE-bFb"/>
+                                </constraints>
+                                <state key="normal" title="开始播放"/>
+                                <connections>
+                                    <action selector="beginPlay" destination="BYZ-38-t0r" eventType="touchUpInside" id="OON-W2-iRF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADz-8P-UXZ">
+                                <rect key="frame" x="187.5" y="617" width="187.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mkq-qL-9ww"/>
+                                </constraints>
+                                <state key="normal" title="暂停播放"/>
+                                <connections>
+                                    <action selector="pausePlay" destination="BYZ-38-t0r" eventType="touchUpInside" id="OWV-DP-u3u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N7a-rD-pqf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0kO-Jj-YQI"/>
+                            <constraint firstItem="ADz-8P-UXZ" firstAttribute="leading" secondItem="N7a-rD-pqf" secondAttribute="trailing" id="T8g-3B-eKp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ADz-8P-UXZ" secondAttribute="bottom" constant="20" id="V0L-Qy-41x"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N7a-rD-pqf" secondAttribute="bottom" constant="20" id="eLz-Uh-yRP"/>
+                            <constraint firstItem="N7a-rD-pqf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/2" id="jJ8-1J-FVa"/>
+                            <constraint firstAttribute="trailing" secondItem="ADz-8P-UXZ" secondAttribute="trailing" id="nuX-uQ-UBC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
